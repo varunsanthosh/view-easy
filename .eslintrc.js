@@ -25,6 +25,9 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'indent': 'off',
+    'object-curly-spacing': [2, 'never'],
+    "no-shadow": [2, { "builtinGlobals": false, "allow": ["state"] }],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',

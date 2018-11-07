@@ -22,12 +22,12 @@ export default new Router({
     },
     {
       path: '/2',
-      name: 'HelloWorld',
+      name: 'view2',
       component: view2,
     },
     {
       path: '/3',
-      name: 'HelloWorld',
+      name: 'view3',
       component: view3,
     },
   ],
