@@ -1,4 +1,1 @@
-const DO_SOMETHING = 'doSomething';
-export default {
-  DO_SOMETHING,
-};
+export const DO_SOMETHING = 'doSomething';

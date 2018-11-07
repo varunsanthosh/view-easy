@@ -21,7 +21,7 @@ export default {
   },
   methods: {
       redirect() {
-          this.$router.push({name: 'HelloWorld'});
+          this.$router.push({name: 'home'});
       },
   },
 };

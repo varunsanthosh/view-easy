@@ -1,13 +1,9 @@
 <template>
     <div class="1st div">
-        <h1>1st View</h1>
-        <ul>
-            <li>a</li>
-            <li>b</li>
-            <li>c</li>
-            <li>d</li>
-        </ul>
-        <button v-on:click='redirect'>{{getFirstTime}}</button>
+        <h1>Let me guess this was what you entered last</h1>
+        <h2>{{getFirstTime}}</h2>
+        <button v-on:click='redirect'>Next View</button>
+        <button v-on:click='redirectBack'>Previous View</button>
     </div>
 </template>
 
@@ -22,6 +18,9 @@ export default {
   methods: {
       redirect() {
           this.$router.push({name: 'view2'});
+      },
+      redirectBack() {
+          this.$router.push({name: 'home'});
       },
   },
 };
